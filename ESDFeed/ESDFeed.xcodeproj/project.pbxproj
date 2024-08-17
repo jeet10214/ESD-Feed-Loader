@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71BC03AA2C7103AC00FFCC78 /* ESDFeed.docc in Sources */ = {isa = PBXBuildFile; fileRef = 71BC03A92C7103AC00FFCC78 /* ESDFeed.docc */; };
+		71BC03B02C7103AC00FFCC78 /* ESDFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC03A52C7103AC00FFCC78 /* ESDFeed.framework */; };
+		71BC03B52C7103AC00FFCC78 /* ESDFeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC03B42C7103AC00FFCC78 /* ESDFeedTests.swift */; };
+		71BC03B62C7103AC00FFCC78 /* ESDFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BC03A82C7103AC00FFCC78 /* ESDFeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BC03C02C7103D100FFCC78 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BC03BF2C7103D100FFCC78 /* FeedItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71BC03B12C7103AC00FFCC78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71BC039C2C7103AC00FFCC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71BC03A42C7103AC00FFCC78;
+			remoteInfo = ESDFeed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		71BC03A52C7103AC00FFCC78 /* ESDFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ESDFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BC03A82C7103AC00FFCC78 /* ESDFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESDFeed.h; sourceTree = "<group>"; };
+		71BC03A92C7103AC00FFCC78 /* ESDFeed.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ESDFeed.docc; sourceTree = "<group>"; };
+		71BC03AF2C7103AC00FFCC78 /* ESDFeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ESDFeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71BC03B42C7103AC00FFCC78 /* ESDFeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ESDFeedTests.swift; sourceTree = "<group>"; };
+		71BC03BF2C7103D100FFCC78 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71BC03A22C7103AC00FFCC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BC03AC2C7103AC00FFCC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BC03B02C7103AC00FFCC78 /* ESDFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71BC039B2C7103AC00FFCC78 = {
+			isa = PBXGroup;
+			children = (
+				71BC03A72C7103AC00FFCC78 /* ESDFeed */,
+				71BC03B32C7103AC00FFCC78 /* ESDFeedTests */,
+				71BC03A62C7103AC00FFCC78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71BC03A62C7103AC00FFCC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71BC03A52C7103AC00FFCC78 /* ESDFeed.framework */,
+				71BC03AF2C7103AC00FFCC78 /* ESDFeedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71BC03A72C7103AC00FFCC78 /* ESDFeed */ = {
+			isa = PBXGroup;
+			children = (
+				71BC03A82C7103AC00FFCC78 /* ESDFeed.h */,
+				71BC03A92C7103AC00FFCC78 /* ESDFeed.docc */,
+				71BC03BF2C7103D100FFCC78 /* FeedItem.swift */,
+			);
+			path = ESDFeed;
+			sourceTree = "<group>";
+		};
+		71BC03B32C7103AC00FFCC78 /* ESDFeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				71BC03B42C7103AC00FFCC78 /* ESDFeedTests.swift */,
+			);
+			path = ESDFeedTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		71BC03A02C7103AC00FFCC78 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BC03B62C7103AC00FFCC78 /* ESDFeed.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71BC03A42C7103AC00FFCC78 /* ESDFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BC03B92C7103AC00FFCC78 /* Build configuration list for PBXNativeTarget "ESDFeed" */;
+			buildPhases = (
+				71BC03A02C7103AC00FFCC78 /* Headers */,
+				71BC03A12C7103AC00FFCC78 /* Sources */,
+				71BC03A22C7103AC00FFCC78 /* Frameworks */,
+				71BC03A32C7103AC00FFCC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ESDFeed;
+			productName = ESDFeed;
+			productReference = 71BC03A52C7103AC00FFCC78 /* ESDFeed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71BC03AE2C7103AC00FFCC78 /* ESDFeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71BC03BC2C7103AC00FFCC78 /* Build configuration list for PBXNativeTarget "ESDFeedTests" */;
+			buildPhases = (
+				71BC03AB2C7103AC00FFCC78 /* Sources */,
+				71BC03AC2C7103AC00FFCC78 /* Frameworks */,
+				71BC03AD2C7103AC00FFCC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71BC03B22C7103AC00FFCC78 /* PBXTargetDependency */,
+			);
+			name = ESDFeedTests;
+			productName = ESDFeedTests;
+			productReference = 71BC03AF2C7103AC00FFCC78 /* ESDFeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71BC039C2C7103AC00FFCC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					71BC03A42C7103AC00FFCC78 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					71BC03AE2C7103AC00FFCC78 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 71BC039F2C7103AC00FFCC78 /* Build configuration list for PBXProject "ESDFeed" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71BC039B2C7103AC00FFCC78;
+			productRefGroup = 71BC03A62C7103AC00FFCC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71BC03A42C7103AC00FFCC78 /* ESDFeed */,
+				71BC03AE2C7103AC00FFCC78 /* ESDFeedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71BC03A32C7103AC00FFCC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BC03AD2C7103AC00FFCC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71BC03A12C7103AC00FFCC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BC03C02C7103D100FFCC78 /* FeedItem.swift in Sources */,
+				71BC03AA2C7103AC00FFCC78 /* ESDFeed.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71BC03AB2C7103AC00FFCC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71BC03B52C7103AC00FFCC78 /* ESDFeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71BC03B22C7103AC00FFCC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71BC03A42C7103AC00FFCC78 /* ESDFeed */;
+			targetProxy = 71BC03B12C7103AC00FFCC78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		71BC03B72C7103AC00FFCC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71BC03B82C7103AC00FFCC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71BC03BA2C7103AC00FFCC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = esdFeed.ESDFeed;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		71BC03BB2C7103AC00FFCC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = esdFeed.ESDFeed;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		71BC03BD2C7103AC00FFCC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = esdFeed.ESDFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		71BC03BE2C7103AC00FFCC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = esdFeed.ESDFeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71BC039F2C7103AC00FFCC78 /* Build configuration list for PBXProject "ESDFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BC03B72C7103AC00FFCC78 /* Debug */,
+				71BC03B82C7103AC00FFCC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BC03B92C7103AC00FFCC78 /* Build configuration list for PBXNativeTarget "ESDFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BC03BA2C7103AC00FFCC78 /* Debug */,
+				71BC03BB2C7103AC00FFCC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71BC03BC2C7103AC00FFCC78 /* Build configuration list for PBXNativeTarget "ESDFeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71BC03BD2C7103AC00FFCC78 /* Debug */,
+				71BC03BE2C7103AC00FFCC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71BC039C2C7103AC00FFCC78 /* Project object */;
+}
