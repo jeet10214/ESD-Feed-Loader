@@ -77,8 +77,7 @@
 			children = (
 				71BC03A82C7103AC00FFCC78 /* ESDFeed.h */,
 				71BC03A92C7103AC00FFCC78 /* ESDFeed.docc */,
-				71BC03BF2C7103D100FFCC78 /* FeedItem.swift */,
-				71BC03C12C7104A700FFCC78 /* FeedLoader.swift */,
+				71BC03C32C7105BB00FFCC78 /* FeedFeature */,
 			);
 			path = ESDFeed;
 			sourceTree = "<group>";
@@ -89,6 +88,15 @@
 				71BC03B42C7103AC00FFCC78 /* ESDFeedTests.swift */,
 			);
 			path = ESDFeedTests;
+			sourceTree = "<group>";
+		};
+		71BC03C32C7105BB00FFCC78 /* FeedFeature */ = {
+			isa = PBXGroup;
+			children = (
+				71BC03BF2C7103D100FFCC78 /* FeedItem.swift */,
+				71BC03C12C7104A700FFCC78 /* FeedLoader.swift */,
+			);
+			path = FeedFeature;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
