@@ -38,7 +38,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversErrorOnClientError() {
         let (sut, client)  = makeSUT()
         
-        expect(sut, toCompleteWithResult: .failure(.connectivity)) {
+        expect(sut, toCompleteWithResult: .failure(RemoteFeedLoader.Error.connectivity)) {
             let clientError = NSError(domain: "Test", code: 0)
             client.completeWithError(error: clientError)
         }
@@ -49,7 +49,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         let sampleCodes = [199, 201, 300, 400, 404, 500]
         sampleCodes.enumerated().forEach { index, code in
-            expect(sut, toCompleteWithResult: .failure(.invalidData)) {
+            expect(sut, toCompleteWithResult: .failure(RemoteFeedLoader.Error.invalidData)) {
                 let json = makeItemsJson([])
                 client.completeWithResponse(code: code, jsonData: json, at: index)
             }
@@ -59,7 +59,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     func test_load_deliversErrorOn200ResponseInvalidJson() {
         let (sut, client) = makeSUT()
         
-        expect(sut, toCompleteWithResult: .failure(.invalidData)) {
+        expect(sut, toCompleteWithResult: .failure(RemoteFeedLoader.Error.invalidData)) {
             let invalidJson = Data("Inavlid Json".utf8)
             client.completeWithResponse(code: 200, jsonData: invalidJson)
         }
@@ -135,7 +135,7 @@ class RemoteFeedLoaderTests: XCTestCase {
             switch (receivedResult, expectedResult) {
             case let (.success(receivedItems), .success(expectedItems)):
                 XCTAssertEqual(receivedItems, expectedItems, file: file, line: line)
-            case let (.failure(receivedFailure), .failure(expectedFailure)):
+            case let (.failure(receivedFailure as RemoteFeedLoader.Error), .failure(expectedFailure as RemoteFeedLoader.Error)):
                 XCTAssertEqual(receivedFailure, expectedFailure, file: file, line: line)
             default:
                 XCTFail("Expected Result \(expectedResult) got \(receivedResult) instead", file: file, line: line)
