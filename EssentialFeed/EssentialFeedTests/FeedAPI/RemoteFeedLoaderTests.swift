@@ -129,7 +129,6 @@ class RemoteFeedLoaderTests: XCTestCase {
     
     private func expect(_ sut: RemoteFeedLoader, toCompleteWithResult expectedResult: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
         
-        var capturedError = [RemoteFeedLoader.Result]()
         let exp = expectation(description: "Wait for load completion")
         sut.load { receivedResult in
             switch (receivedResult, expectedResult) {
@@ -187,7 +186,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         }
         
         func completeWithError(error: Error, at index: Int = 0) {
-            messages[0].completion(.failur(error: error))
+            messages[0].completion(.failure(error: error))
         }
         
         func completeWithResponse(code: Int, jsonData: Data, at index: Int = 0) {

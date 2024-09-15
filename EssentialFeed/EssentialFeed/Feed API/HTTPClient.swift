@@ -9,7 +9,7 @@ import Foundation
 
 public enum HTTPClientResult {
     case success(data: Data, response: HTTPURLResponse)
-    case failur(error: Error)
+    case failure(error: Error)
 }
 
 public protocol HTTPClient {
