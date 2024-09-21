@@ -117,16 +117,6 @@ class RemoteFeedLoaderTests: XCTestCase {
         return (sut, client)
     }
     
-    private func trackForMemoryLeaks(_ instance: AnyObject, file: StaticString = #file, line: UInt = #line) {
-        if #available(macOS 10.15, *) {
-            addTeardownBlock { [weak instance] in
-                XCTAssertNil(instance, "Instance should have been nil. Potential Memory leak", file: file, line: line)
-            }
-        } else {
-            // Fallback on earlier versions
-        }
-    }
-    
     private func expect(_ sut: RemoteFeedLoader, toCompleteWithResult expectedResult: RemoteFeedLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
         
         let exp = expectation(description: "Wait for load completion")
