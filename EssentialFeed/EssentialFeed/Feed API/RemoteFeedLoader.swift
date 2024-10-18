@@ -1,5 +1,5 @@
 //
-//  RemoeFeedLoader.swift
+//  RemoteFeedLoader.swift
 //  EssentialFeed
 //
 //  Created by Jeet Kapadia on 04/09/24.
