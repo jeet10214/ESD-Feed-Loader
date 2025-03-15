@@ -14,6 +14,7 @@ public protocol FeedStore: AnyObject {
 
     func deleteCachedFeed(completion: @escaping DeletionsCompletion)
     func insert(_ feed: [LocalFeedImage], timestamp: Date, completion: @escaping InsertionsCompletion)
+    func load()
 }
 
 

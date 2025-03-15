@@ -125,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				71AFE20A2D7BE89500B62701 /* FeedCache */,
-				715077D32D41BBE600988CB5 /* Feed Cache */,
 				71C681192C88C2CC00359F01 /* Feed API */,
 				080EDEF521B6DA7E00813479 /* Info.plist */,
 				080EDF1021B6DFA200813479 /* Feed Feature */,
@@ -152,13 +151,6 @@
 				080EDF0D21B6DCB600813479 /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
-			sourceTree = "<group>";
-		};
-		715077D32D41BBE600988CB5 /* Feed Cache */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
 		715077D42D41BC2200988CB5 /* Feed Cache */ = {
