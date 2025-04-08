@@ -117,7 +117,7 @@ final class CodableFeedStoreTests: XCTestCase {
     }
     
     func test_delete_deliversErrorOnDeletionError() {
-        let noDeletePermissionURL = cachesDirectory()
+        let noDeletePermissionURL = noDeletePermissionURL()
         let sut = makeSUT(storeURL: noDeletePermissionURL)
         
         let deletionError = deleteCache(from: sut)
@@ -148,7 +148,7 @@ final class CodableFeedStoreTests: XCTestCase {
             op3.fulfill()
         }
         
-        wait(for: completionOperationsInOrder, timeout: 5.0)
+        waitForExpectations(timeout: 5.0)
         
         XCTAssertEqual(completionOperationsInOrder, [op1, op2, op3], "Expected side effects to run serially but operation finished in wrong order")
     }
@@ -229,5 +229,9 @@ final class CodableFeedStoreTests: XCTestCase {
     
     private func cachesDirectory() -> URL {
         return FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first!
+    }
+    
+    private func noDeletePermissionURL() -> URL {
+        return FileManager.default.urls(for: .cachesDirectory, in: .systemDomainMask).first!
     }
 }
