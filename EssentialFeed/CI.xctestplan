@@ -18,14 +18,15 @@
         }
       ]
     },
+    "testExecutionOrdering" : "random",
     "threadSanitizerEnabled" : true
   },
   "testTargets" : [
     {
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
-        "identifier" : "080EDEF921B6DA7E00813479",
-        "name" : "EssentialFeedTests"
+        "identifier" : "71AFE2582DB548D000B62701",
+        "name" : "EssentialFeedCacheIntegrationTests"
       }
     },
     {
@@ -33,6 +34,13 @@
         "containerPath" : "container:EssentialFeed.xcodeproj",
         "identifier" : "7173CC762CC1E66900DFEA5A",
         "name" : "EssentialFeedAPIEndToEndTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "080EDEF921B6DA7E00813479",
+        "name" : "EssentialFeedTests"
       }
     }
   ],
